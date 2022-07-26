@@ -1,0 +1,468 @@
+* {
+   margin: 0;
+   padding: 0; 
+   font-family: 'Montserrat', sans-serif;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------GRID CONTAINER---------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+                                                    
+                                                        /* INICIO */
+.gridContainer {
+    display: grid;
+    grid-template-areas: 
+    "header  header  header"
+    "main  mainE  mainE"
+    "main  mainE1  mainE1"
+    "carroussel carroussel carroussel"  
+    "footer  footer  footer";
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 4rem 15rem 10rem 25rem 13rem;
+    width: 100%;
+    
+}
+
+.header {
+    background-color: #99d4e7;
+    grid-area: header;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main {
+    background-color: #99d4e7;
+    grid-area: main;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mainE {
+    background-color: #99d4e7;
+    grid-area: mainE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainE1 {
+    background-color: #99d4e7;
+    grid-area: mainE1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carroussel {
+    background-color: #99d4e7;
+    grid-area: carroussel;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    background-color: #5457a1;
+    grid-area: footer;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: justify;
+}
+
+                                                    /* OTRAS PÁGINAS */
+
+.gridContainerMdc {
+    display: grid;
+    grid-template-areas: 
+    "header  header  header"
+    "mainMdc  mainMdc  mainMdc" 
+    "footer  footer  footer";
+    grid-template-rows: 4rem 29rem 13rem;
+}
+
+.gridContainerServicios {
+    display: grid;
+    grid-template-areas: 
+    "header  header  header"
+    "mainServicios  mainServicios  mainServicios" 
+    "footer  footer  footer";
+    grid-template-rows: 4rem 29rem 13rem;
+}    
+
+.gridContainerFaq {
+    display: grid;
+    grid-template-areas: 
+    "header  header  header"
+    "mainFaq  mainFaq  mainFaq" 
+    "footer  footer  footer";
+    grid-template-rows: 4rem 29rem 13rem;
+}    
+
+.gridContainerContacto {
+    display: grid;
+    grid-template-areas: 
+    "header  header  header"
+    "mainContacto  mainContacto  mainContacto" 
+    "footer  footer  footer";
+    grid-template-rows: 4rem 35rem 13rem;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------HEADER-------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+.nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav {
+    padding: 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav ul li {
+    display: inline;
+    padding-right: 11.25rem;
+}
+
+.nav a img {
+    width: 100%;
+    display: inline-block;
+}
+
+.real {
+    width: 3%;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------MAIN--------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+/* INICIO */
+
+.oso {
+    width: 20rem;
+    padding-left: 40%;
+}
+
+.hola {
+    width: 30rem;
+    padding-right: 20%;
+}
+
+.envios {
+    width: 30rem;
+    padding-right: 20%;
+}
+
+.pics {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://img.freepik.com/foto-gratis/fondo-acuarela-pintada-mano-forma-cielo-nubes_24972-1108.jpg?t=st=1657895497~exp=1657896097~hmac=46c5c8f7120f9ee7da73786d3d7a7af0634b1c1e69e6371eccbcbf4550ccc346&w=996);
+    border: 1px solid black;
+    border-radius: 16px;
+    width: 75%;
+    height: 70%;
+    padding: 1rem;
+}
+
+/* MÉTODO DE COMPRA */
+
+.mainMdc{
+    grid-area: mainMdc;
+    background-color: white;
+    padding: 0;
+    border: 1px solid black;
+}
+
+.mainMdc div section {
+    width: 40rem;
+    line-height: 1.8;
+}
+
+.mainMdc .grid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 46rem auto auto auto;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.mainMdc .grid .imagen {
+    width: 75%;
+    border: 2px solid black;
+}
+
+.mainMdc .grid .gridMetodo {
+    margin-left: 2.5rem;
+}
+
+.mainMdc .grid .metodo ol li {
+    list-style-type: decimal;
+    margin-left: 1rem;
+}
+
+/* SERVICIOS */
+
+.mainServicios {
+    grid-area: mainServicios;
+    background-image: url(./img/stich-triste.gif);
+    height: 30rem;
+}
+
+.mainServicios p {
+    font-size: 1.625em;
+    color: black;
+    padding: 0.2rem;
+    margin: 1rem;
+    background-color: rgba(240, 248, 255, 0.547);
+    display: inline;
+}
+
+/* FAQ */
+
+.mainFaq{
+    grid-area: mainFaq;
+}
+
+details{
+    background: #739eb9;
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+.mainFaq h1 {
+    margin-left: 1rem;
+}
+
+/* CONTACTO */
+
+.mainContacto{
+    grid-area: mainContacto;
+}
+
+.mainContacto div section form {
+    background-image: url(https://img.freepik.com/foto-gratis/fondo-acuarela-pintada-mano-forma-cielo-nubes_24972-1108.jpg?t=st=1657895497~exp=1657896097~hmac=46c5c8f7120f9ee7da73786d3d7a7af0634b1c1e69e6371eccbcbf4550ccc346&w=996);
+    border-radius: 10px;
+    width: 30rem;
+    height: 22rem;
+    border: 2px solid black;
+    padding: 1rem;
+    margin: 1.5rem;
+}
+
+.mainContacto div section form fieldset { 
+    line-height: 1.5;
+}
+
+.mapa {
+    margin: 2rem;
+}
+
+.mainContacto div section h1 { 
+    line-height: 1.5;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.gridContacto {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 37.5rem auto;
+    justify-content: stretch;
+    align-items: center;
+}
+
+.formulario {
+    justify-self: self-start;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------FOOTER-------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.info {
+    width: 25rem;
+    padding-top: 2rem;
+    text-align: justify;
+}
+
+.contacto {
+    width: 20rem;
+    padding-top: 2rem;
+}
+
+.redes {
+    padding-top: 2rem; 
+}
+
+.red {
+    width: 5.5rem;
+    height: 5.5rem;
+    padding-right: 1.75rem;
+}
+
+p, .listaContacto {
+    line-height: 2;
+    list-style-type: none;
+}
+
+div h3 {
+    font-size: 1.25em;
+    font-weight: bold;
+    color: white;
+}
+
+div ul li, .info p {
+    font-size: 0.9375em;
+    font-weight: normal;
+    color: white;
+}
+/*-----------------------CELULAR*-----------------------*/
+@media screen and (min-width: 360px) and (max-width: 1024px) {
+
+    html, body {
+        overflow-x: hidden;
+    }
+    
+
+    .footer {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+    /* INICIO */
+    .gridContainer {
+        display: grid;
+        grid-template-rows: 10rem auto auto 15rem auto;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "header"
+        "mainE"
+        "mainE1"
+        "carroussel"
+        "footer";
+    }
+
+    .main, .info , .real, 
+    .gridMetodo h3, .gridMetodo ol{
+        display: none;
+    }
+
+    .hola, .envios {
+        padding-left: 6rem;
+    }
+
+    .pics {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(https://img.freepik.com/foto-gratis/fondo-acuarela-pintada-mano-forma-cielo-nubes_24972-1108.jpg?t=st=1657895497~exp=1657896097~hmac=46c5c8f7120f9ee7da73786d3d7a7af0634b1c1e69e6371eccbcbf4550ccc346&w=996);
+        border: 1px solid black;
+        border-radius: 16px;
+        width: 65%;
+        height: 60%;
+        margin: 1.5rem;
+    }
+
+    /* MÉTODO DE COMPRA */
+    .gridContainerMdc {
+        display: grid;
+        grid-template-rows: 10rem auto auto;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "header"
+        "mainMdc" 
+        "footer";
+    }
+    
+    .gridMetodo {
+        font-size: small;
+        text-align: center;
+    }
+
+    .mainMdc .grid {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:center;
+    }
+
+    .mainMdc .grid img {
+        margin-top: 2%;
+    }
+
+    /* SERVICIOS */
+
+    .gridContainerServicios {
+        display: grid;
+        grid-template-rows: 10rem auto auto;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "header"
+        "mainServicios" 
+        "footer";
+    }
+
+    /* FAQ */
+
+    .gridContainerFaq {
+        display: grid;
+        grid-template-rows: 10rem 30rem auto;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "header"
+        "mainFaq" 
+        "footer";
+    }
+
+    /* CONTACTO */
+
+    .gridContainerContacto {
+        display: grid;
+        grid-template-rows: 10rem auto auto;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "header"
+        "mainContacto" 
+        "footer";
+    }
+
+    .gridContacto {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+        justify-content: stretch;
+        align-items: center;
+    }
+
+    .mainContacto div section form {
+        width: 20rem;
+    }
+
+    .mapa {
+        overflow: scroll;
+    }
+}
