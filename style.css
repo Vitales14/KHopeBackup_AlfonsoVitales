@@ -19,7 +19,6 @@
     "footer  footer  footer";
     grid-template-columns: auto auto auto;
     grid-template-rows: 4rem 15rem 10rem 25rem 13rem;
-    width: 100%;
 }
 
 .header {
@@ -80,6 +79,7 @@
     "mainMdc  mainMdc  mainMdc" 
     "footer  footer  footer";
     grid-template-rows: 4rem 29rem 13rem;
+    grid-template-columns: auto auto auto;
 }
 
 .gridContainerServicios {
@@ -89,6 +89,7 @@
     "mainServicios  mainServicios  mainServicios" 
     "footer  footer  footer";
     grid-template-rows: 4rem 29rem 13rem;
+    grid-template-columns: auto auto auto;
 }    
 
 .gridContainerFaq {
@@ -98,6 +99,7 @@
     "mainFaq  mainFaq  mainFaq" 
     "footer  footer  footer";
     grid-template-rows: 4rem 29rem 13rem;
+    grid-template-columns: auto auto auto;
 }    
 
 .gridContainerContacto {
@@ -107,6 +109,7 @@
     "mainContacto  mainContacto  mainContacto" 
     "footer  footer  footer";
     grid-template-rows: 4rem 35rem 13rem;
+    grid-template-columns: auto auto auto;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------*/
@@ -198,8 +201,7 @@
 }
 
 .mainMdc .grid .imagen {
-    width: 75%;
-    border: 2px solid black;
+    width: 82%;
 }
 
 .mainMdc .grid .gridMetodo {
@@ -209,6 +211,10 @@
 .mainMdc .grid .metodo ol li {
     list-style-type: decimal;
     margin-left: 1rem;
+}
+
+.gridMetodo h3 {
+    color: black;
 }
 
 /* SERVICIOS */
@@ -268,6 +274,8 @@ details{
 
 .mapa {
     margin: 2rem;
+    height: 75%;
+    width: 75%;
 }
 
 .mainContacto div section h1 { 
@@ -463,5 +471,7 @@ div ul li, .info p {
 
     .mapa {
         overflow: scroll;
+        width: 75%;
+        height: 75%;
     }
 }
