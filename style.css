@@ -342,7 +342,36 @@ div ul li, .info p {
     font-weight: normal;
     color: white;
 }
-/*-----------------------CELULAR*-----------------------*/
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------ANIMACIONES-----------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+.red:hover{
+    filter: invert(77%) sepia(55%) saturate(206%) hue-rotate(150deg) brightness(96%) contrast(88%);
+    transition: filter 0.4s;
+}
+
+.nav ul li a:hover {
+    background-color: #3396d3;
+    border-radius: 8px;
+    transition: background-color, box-shadow 0.5s;
+    box-shadow: 0px 1px 10px;
+}
+
+.products:hover {
+    box-shadow: 0px 1px 10px;
+    transition: box-shadow 0.5s;
+}
+
+details:hover{
+    box-shadow: 0px 1px 10px;
+}
+
+
+/*------------------------------------------------------*/
+/*-----------------------CELULAR------------------------*/
+/*------------------------------------------------------*/
 @media screen and (min-width: 360px) and (max-width: 1024px) {
 
     html, body {
