@@ -426,11 +426,6 @@ details:hover{
         margin: 1.5rem;
     }
 
-    .photo {
-        height: 13rem;
-        width: 26rem;
-    }
-
     /* MÉTODO DE COMPRA */
     .gridContainerMdc {
         display: grid;
