@@ -18,7 +18,7 @@
     "carroussel carroussel carroussel"  
     "footer  footer  footer";
     grid-template-columns: auto auto auto;
-    grid-template-rows: 4rem 15rem 10rem 25rem 13rem;
+    grid-template-rows: 4rem 15rem 10rem auto auto;
 }
 
 .header {
@@ -88,7 +88,7 @@
     "header  header  header"
     "mainServicios  mainServicios  mainServicios" 
     "footer  footer  footer";
-    grid-template-rows: auto 35rem auto;
+    grid-template-rows: auto 36.5rem auto;
     grid-template-columns: auto auto auto;
 }    
 
@@ -98,7 +98,7 @@
     "header  header  header"
     "mainFaq  mainFaq  mainFaq" 
     "footer  footer  footer";
-    grid-template-rows: auto 29rem auto;
+    grid-template-rows: auto 35rem auto;
     grid-template-columns: auto auto auto;
 }    
 
@@ -108,7 +108,7 @@
     "header  header  header"
     "mainContacto  mainContacto  mainContacto" 
     "footer  footer  footer";
-    grid-template-rows: 4rem 35rem 13rem;
+    grid-template-rows: auto 35rem auto;
     grid-template-columns: auto auto auto;
 }
 
@@ -215,19 +215,25 @@
     color: black;
 }
 
+.gridMetodo{
+    padding-top: 2rem;
+}
+
 /* SERVICIOS */
 
 .mainServicios {
     grid-area: mainServicios;
     background-color: white;
     height: 10rem;
+    padding-left: 7rem;
+    padding-right: 3.5rem;
 }
 
 .mainServicios .galeria {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    gap: 2rem;
+    gap: 4rem;
     margin: 1%;
 }
 
@@ -248,6 +254,7 @@
 details{
     background: #739eb9;
     padding: 1rem;
+    padding-left: 4rem;
     margin: 2rem;
     border-radius: 10px;
     cursor: pointer;
@@ -311,10 +318,12 @@ details{
     width: 25rem;
     padding-top: 2rem;
     text-align: justify;
+    padding-top: 2rem;
 }
 
 .contacto {
     width: 20rem;
+    padding-top: 2rem;
     padding-top: 2rem;
 }
 
@@ -331,6 +340,7 @@ details{
 p, .listaContacto {
     line-height: 2;
     list-style-type: none;
+    transform: translateX(-2rem);
 }
 
 div h3 {
@@ -344,6 +354,11 @@ div ul li, .info p {
     font-weight: normal;
     color: white;
 }
+
+.contacto h3, .info h3 {
+    transform: translateX(4rem);
+}
+
 
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------ANIMACIONES-----------------------------------------------------------*/
@@ -370,6 +385,10 @@ details:hover{
     box-shadow: 0px 1px 10px;
 }
 
+.products:hover{
+    transform: scale(1.5);
+    transition: transform 0.7s;
+}
 
 /*------------------------------------------------------*/
 /*-----------------------CELULAR------------------------*/
