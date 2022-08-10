@@ -1,10 +1,10 @@
 * {
-   margin: 0;
-   padding: 0; 
-   font-family: 'Montserrat', sans-serif;
-}
+    margin: 0;
+    padding: 0; 
+    font-family: 'Montserrat', sans-serif;
+ }
 
-/*--------------------------------------------------------------------------------------------------------------------------------*/
+ /*--------------------------------------------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------GRID CONTAINER---------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------*/
                                                     
@@ -70,7 +70,7 @@
     align-items: justify;
 }
 
-                                                    /* OTRAS PÁGINAS */
+/* OTRAS PÁGINAS */
 
 .gridContainerMdc {
     display: grid;
@@ -113,37 +113,55 @@
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------HEADER ESTILIZADO CON BOOTSTRAP---------------------------------------------------*/
+/*-------------------------------------------------------------HEADER-------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------*/
+
+.navbar{ 
+    ul{
+        li{
+            a{
+            &:hover {
+                background-color: #3396d3;
+                border-radius: 8px;
+                transition: background-color, box-shadow 0.5s;
+                box-shadow: 0px 1px 10px;
+                } 
+            }
+        }
+    }
+}
 
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------MAIN--------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 
-/* INICIO */
-
-.oso {
-    width: 40rem;
-    padding-left: 40%;
-}
-
-.hola {
-    width: 35rem;
-    padding-right: 20%;
-}
-
-.envios {
-    width: 35rem;
-    padding-right: 20%;
-}
-
-.pics {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 75%;
-    height: 70%;
-    padding: 1rem;
+                                            /* INICIO */
+.main {
+    .oso {
+        width: 40rem;
+        padding-left: 40%;
+    }
+    
+    .hola {
+        width: 35rem;
+        padding-right: 20%;
+    }
+    
+    .envios {
+        width: 35rem;
+        padding-right: 20%;
+    }
+    
+    .carroussel {
+        .pics {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 75%;
+            height: 70%;
+            padding: 1rem;
+        }
+    }
 }
 
 .photo {
@@ -158,38 +176,35 @@
     background-color: white;
     padding: 0;
     border: 1px solid black;
-}
 
-.mainMdc div section {
-    width: 40rem;
-    line-height: 1.8;
-}
+    .mainMdc div section {
+        width: 40rem;
+        line-height: 1.8;
+    }
 
-.mainMdc .grid {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 46rem auto auto auto;
-}
+    .mainMdc .grid {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 46rem auto auto auto;
+        
+        .imagen {
+            width: 82%;
+        }
 
-.mainMdc .grid .imagen {
-    width: 82%;
-}
+        .gridMetodo {
+            margin-left: 2.5rem;
+            padding-top: 2rem;
 
-.mainMdc .grid .gridMetodo {
-    margin-left: 2.5rem;
-}
+            h3 {
+                color: black;
+            }
+        }
 
-.mainMdc .grid .metodo ol li {
-    list-style-type: decimal;
-    margin-left: 1rem;
-}
-
-.gridMetodo h3 {
-    color: black;
-}
-
-.gridMetodo{
-    padding-top: 2rem;
+        .metodo ol li {
+            list-style-type: decimal;
+            margin-left: 1rem;
+        }
+    }
 }
 
 /* SERVICIOS */
@@ -200,62 +215,71 @@
     height: 10rem;
     padding-left: 7rem;
     padding-right: 3.5rem;
-}
 
-.mainServicios .galeria {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    gap: 4rem;
-    margin: 1%;
-}
+    .heading h1 {
+        margin: 1%;
+    }
 
-.products {
-    width: 14.5%;
-}
+    .galeria {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        gap: 4rem;
+        margin: 1%;
 
-.heading h1 {
-    margin: 1%;
+        .products {
+            width: 14.5%;
+
+            &:hover {
+                box-shadow: 0px 1px 10px;
+                transition: box-shadow 0.5s;
+                transform: scale(1.5);
+                transition: transform 0.7s;
+            }
+        }
+    }
 }
 
 /* FAQ */
 
 .mainFaq{
     grid-area: mainFaq;
-}
 
-.mainFaq h1 {
-    margin-left: 1rem;
+    h1 {
+        margin-left: 1rem;
+    }
 }
 
 /* CONTACTO */
 
 .mainContacto{
     grid-area: mainContacto;
-}
 
-.mainContacto div section form {
-    border-radius: 10px;
-    width: 30rem;
-    height: 22rem;
-    padding: 1rem;
-    margin: 1.5rem;
-}
+    div section {
+        h1 { 
+            line-height: 1.5;
+            padding-left: 6rem;
+            margin-top: 1rem;
+        }   
 
-.mainContacto div section form fieldset { 
-    line-height: 1.5;
+        form {
+            border-radius: 10px;
+            width: 30rem;
+            height: 22rem;
+            padding: 1rem;
+            margin: 1.5rem;
+    
+            fieldset { 
+                line-height: 1.5;
+            }
+        }
+    }
 }
 
 .mapa {
     margin: 2rem;
     height: 75%;
     width: 75%;
-}
-
-.mainContacto div section h1 { 
-    line-height: 1.5;
-    padding-left: 6rem;
-    margin-top: 1rem;
 }
 
 .gridContacto {
@@ -281,12 +305,35 @@
     padding-top: 2rem;
     text-align: justify;
     padding-top: 2rem;
+
+    h3{
+        transform: translateX(4rem);
+    }
+
+    p {
+        font-size: 0.9375em;
+        font-weight: normal;
+        color: white;
+        line-height: 2;
+        list-style-type: none;
+        transform: translateX(-2rem);
+    }
 }
 
 .contacto {
     width: 20rem;
     padding-top: 2rem;
     padding-top: 2rem;
+
+    h3 {
+        transform: translateX(4rem);
+    }
+
+    .listaContacto{
+        line-height: 2;
+        list-style-type: none;
+        transform: translateX(-2rem);
+    }
 }
 
 .redes {
@@ -297,52 +344,26 @@
     width: 7.3rem;
     height: 5.3rem;
     padding-right: 1.75rem;
+
+    &:hover{
+        filter: invert(77%) sepia(55%) saturate(206%) hue-rotate(150deg) brightness(96%) contrast(88%);
+        transition: filter 0.4s;
+    }
 }
 
-p, .listaContacto {
-    line-height: 2;
-    list-style-type: none;
-    transform: translateX(-2rem);
-}
-
-div h3 {
-    font-size: 1.25em;
-    font-weight: bold;
-    color: white;
-}
-
-div ul li, .info p {
-    font-size: 0.9375em;
-    font-weight: normal;
-    color: white;
-}
-
-.contacto h3, .info h3 {
-    transform: translateX(4rem);
-}
-
-
-/*--------------------------------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------ANIMACIONES-----------------------------------------------------------*/
-/*--------------------------------------------------------------------------------------------------------------------------------*/
-
-.red:hover{
-    filter: invert(77%) sepia(55%) saturate(206%) hue-rotate(150deg) brightness(96%) contrast(88%);
-    transition: filter 0.4s;
-}
-
-.navbar ul li a:hover {
-    background-color: #3396d3;
-    border-radius: 8px;
-    transition: background-color, box-shadow 0.5s;
-    box-shadow: 0px 1px 10px;
-}
-
-.products:hover {
-    box-shadow: 0px 1px 10px;
-    transition: box-shadow 0.5s;
-    transform: scale(1.5);
-    transition: transform 0.7s;
+div{
+    h3 {
+        font-size: 1.25em;
+        font-weight: bold;
+        color: white;
+    }
+    ul{
+        li{
+            font-size: 0.9375em;
+            font-weight: normal;
+            color: white;
+        }
+    }
 }
 
 /*------------------------------------------------------*/
@@ -415,14 +436,16 @@ div ul li, .info p {
         text-align: center;
     }
 
-    .mainMdc .grid {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content:center;
-    }
-
-    .mainMdc .grid img {
-        margin-top: 2%;
+    .mainMdc{ 
+        .grid {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content:center;
+            
+            img {
+                margin-top: 2%;
+            }
+        }
     }
 
     /* SERVICIOS */
@@ -437,22 +460,26 @@ div ul li, .info p {
         "footer";
     }
 
-    .mainServicios .galeria {
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        gap: 1rem;
-        margin-left: 15%;
-    }
+    .mainServicios{
 
-    .products {
-        width: 85%;
-    }
+        .heading h1 {
+            margin-left: 15%;
+            margin-top: 4%;
+            margin-bottom: 4%;
+        }
+        
+        .galeria {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            gap: 1rem;
+            margin-left: 15%;
 
-    .heading h1 {
-        margin-left: 15%;
-        margin-top: 4%;
-        margin-bottom: 4%;
+            .products {
+                width: 85%;
+            }
+        
+        } 
     }
 
     /* FAQ */
@@ -485,20 +512,33 @@ div ul li, .info p {
         grid-template-columns: auto;
         justify-content: stretch;
         align-items: center;
+
+        .formulario{ 
+            
+            h1{
+            transform: translateX(-4rem);
+            }
+
+            .mapa {
+                overflow: scroll;
+                width: 75%;
+                height: 75%;
+            }
+        }
     }
 
-    .mainContacto div section form {
-        width: 20rem;
-        transform: translateX(-4rem);
-    }
-
-    .mapa {
-        overflow: scroll;
-        width: 75%;
-        height: 75%;
-    }
-
-    .formulario h1{
-        transform: translateX(-4rem);
+    .mainContacto {
+        div{
+            section{
+                form{
+                    width: 20rem;
+                    transform: translateX(-4rem);
+                }
+            }
+        }
     }
 }
+
+
+
+
