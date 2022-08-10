@@ -224,15 +224,6 @@
     grid-area: mainFaq;
 }
 
-details{
-    background: #739eb9;
-    padding: 1rem;
-    padding-left: 4rem;
-    margin: 2rem;
-    border-radius: 10px;
-    cursor: pointer;
-  }
-
 .mainFaq h1 {
     margin-left: 1rem;
 }
