@@ -142,7 +142,6 @@
   grid-area: mainMdc;
   background-color: white;
   padding: 0;
-  border: 1px solid black;
 }
 .mainMdc div section {
   width: 40rem;
@@ -208,20 +207,8 @@
 .mainContacto {
   grid-area: mainContacto;
 }
-.mainContacto div section h1 {
-  line-height: 1.5;
-  padding-left: 6rem;
-  margin-top: 1rem;
-}
-.mainContacto div section form {
-  border-radius: 10px;
-  width: 30rem;
-  height: 22rem;
-  padding: 1rem;
-  margin: 1.5rem;
-}
-.mainContacto div section form fieldset {
-  line-height: 1.5;
+.mainContacto h1 {
+  transform: translateY(1rem);
 }
 
 .mapa {
@@ -236,6 +223,7 @@
   grid-template-columns: 37.5rem auto;
   justify-content: stretch;
   align-items: center;
+  transform: translateY(-5rem);
 }
 
 .formulario {

@@ -171,7 +171,6 @@
     grid-area: mainMdc;
     background-color: white;
     padding: 0;
-    border: 1px solid black;
 
     div section {
         width: 40rem;
@@ -251,24 +250,8 @@
 .mainContacto{
     grid-area: mainContacto;
 
-    div section {
-        h1 { 
-            line-height: 1.5;
-            padding-left: 6rem;
-            margin-top: 1rem;
-        }   
-
-        form {
-            border-radius: 10px;
-            width: 30rem;
-            height: 22rem;
-            padding: 1rem;
-            margin: 1.5rem;
-    
-            fieldset { 
-                line-height: 1.5;
-            }
-        }
+    h1{
+        transform: translateY(1rem);
     }
 }
 
@@ -284,6 +267,7 @@
     grid-template-columns: 37.5rem auto;
     justify-content: stretch;
     align-items: center;
+    transform: translateY(-5rem);
 }
 
 .formulario {
