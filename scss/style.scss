@@ -136,32 +136,28 @@
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 
                                             /* INICIO */
-.main {
-    .oso {
-        width: 40rem;
-        padding-left: 40%;
+.oso {
+    width: 40rem;
+    padding-left: 40%;
     }
     
-    .hola {
-        width: 35rem;
-        padding-right: 20%;
-    }
+.hola {
+    width: 35rem;
+    padding-right: 20%;
+}
     
-    .envios {
-        width: 35rem;
-        padding-right: 20%;
-    }
+.envios {
+    width: 35rem;
+    padding-right: 20%;
+}
     
-    .carroussel {
-        .pics {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 75%;
-            height: 70%;
-            padding: 1rem;
-        }
-    }
+.pics {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    height: 70%;
+    padding: 1rem;
 }
 
 .photo {
@@ -177,12 +173,12 @@
     padding: 0;
     border: 1px solid black;
 
-    .mainMdc div section {
+    div section {
         width: 40rem;
         line-height: 1.8;
     }
 
-    .mainMdc .grid {
+    .grid {
         display: grid;
         grid-template-rows: auto;
         grid-template-columns: 46rem auto auto auto;

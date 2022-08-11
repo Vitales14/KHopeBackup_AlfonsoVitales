@@ -108,19 +108,22 @@
 /*--------------------------------------------------------------MAIN--------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 /* INICIO */
-.main .oso {
+.oso {
   width: 40rem;
   padding-left: 40%;
 }
-.main .hola {
+
+.hola {
   width: 35rem;
   padding-right: 20%;
 }
-.main .envios {
+
+.envios {
   width: 35rem;
   padding-right: 20%;
 }
-.main .carroussel .pics {
+
+.pics {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -141,26 +144,26 @@
   padding: 0;
   border: 1px solid black;
 }
-.mainMdc .mainMdc div section {
+.mainMdc div section {
   width: 40rem;
   line-height: 1.8;
 }
-.mainMdc .mainMdc .grid {
+.mainMdc .grid {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 46rem auto auto auto;
 }
-.mainMdc .mainMdc .grid .imagen {
+.mainMdc .grid .imagen {
   width: 82%;
 }
-.mainMdc .mainMdc .grid .gridMetodo {
+.mainMdc .grid .gridMetodo {
   margin-left: 2.5rem;
   padding-top: 2rem;
 }
-.mainMdc .mainMdc .grid .gridMetodo h3 {
+.mainMdc .grid .gridMetodo h3 {
   color: black;
 }
-.mainMdc .mainMdc .grid .metodo ol li {
+.mainMdc .grid .metodo ol li {
   list-style-type: decimal;
   margin-left: 1rem;
 }
