@@ -299,14 +299,13 @@ div ul li {
     overflow-x: hidden;
   }
   .footer {
-    display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0;
   }
   /* INICIO */
   .gridContainer {
-    display: grid;
     grid-template-rows: auto auto auto 15rem auto;
     grid-template-columns: 100%;
     grid-template-areas: "header" "mainE" "mainE1" "carroussel" "footer";
@@ -319,7 +318,6 @@ div ul li {
     padding-left: 6rem;
   }
   .pics {
-    display: flex;
     align-items: center;
     justify-content: center;
     width: 65%;
@@ -332,7 +330,6 @@ div ul li {
   }
   /* MÉTODO DE COMPRA */
   .gridContainerMdc {
-    display: grid;
     grid-template-rows: auto auto 23.5rem;
     grid-template-columns: 100%;
     grid-template-areas: "header" "mainMdc" "footer";
@@ -351,8 +348,7 @@ div ul li {
   }
   /* SERVICIOS */
   .gridContainerServicios {
-    display: grid;
-    grid-template-rows: auto 133rem 23.5rem;
+    grid-template-rows: auto 160rem auto;
     grid-template-columns: 100%;
     grid-template-areas: "header" "mainServicios" "footer";
   }
@@ -365,43 +361,34 @@ div ul li {
     display: flex;
     flex-flow: column;
     justify-content: center;
-    gap: 1rem;
+    gap: 5rem;
     margin-left: 15%;
   }
   .mainServicios .galeria .products {
-    width: 85%;
+    width: 80%;
   }
   /* FAQ */
   .gridContainerFaq {
-    display: grid;
     grid-template-rows: auto auto 23.5rem;
     grid-template-columns: 100%;
     grid-template-areas: "header" "mainFaq" "footer";
   }
   /* CONTACTO */
   .gridContainerContacto {
-    display: grid;
     grid-template-rows: auto auto 23.5rem;
     grid-template-columns: 100%;
     grid-template-areas: "header" "mainContacto" "footer";
   }
   .gridContacto {
-    display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: auto;
     justify-content: stretch;
     align-items: center;
+    transform: translateY(3rem);
   }
-  .gridContacto .formulario h1 {
-    transform: translateX(-4rem);
-  }
-  .gridContacto .formulario .mapa {
+  .gridContacto .mapa {
     overflow: scroll;
     width: 75%;
     height: 75%;
-  }
-  .mainContacto div section form {
-    width: 20rem;
-    transform: translateX(-4rem);
   }
 }/*# sourceMappingURL=style.css.map */

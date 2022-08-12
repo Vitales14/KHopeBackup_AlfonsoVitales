@@ -357,16 +357,15 @@ div{
     
 
     .footer {
-        display: flex;
         flex-flow: column nowrap;
         justify-content:center;
         align-items:center;
+        margin-bottom: 0;
     }
 
 
     /* INICIO */
     .gridContainer {
-        display: grid;
         grid-template-rows: auto auto auto 15rem auto;
         grid-template-columns: 100%;
         grid-template-areas: 
@@ -387,7 +386,6 @@ div{
     }
 
     .pics {
-        display: flex;
         align-items: center;
         justify-content: center;
         width: 65%;
@@ -402,7 +400,6 @@ div{
 
     /* MÉTODO DE COMPRA */
     .gridContainerMdc {
-        display: grid;
         grid-template-rows: auto auto 23.5rem;
         grid-template-columns: 100%;
         grid-template-areas: 
@@ -431,8 +428,7 @@ div{
     /* SERVICIOS */
 
     .gridContainerServicios {
-        display: grid;
-        grid-template-rows: auto 133rem 23.5rem;
+        grid-template-rows: auto 160rem auto;
         grid-template-columns: 100%;
         grid-template-areas: 
         "header"
@@ -452,11 +448,11 @@ div{
             display: flex;
             flex-flow: column;
             justify-content: center;
-            gap: 1rem;
+            gap: 5rem;
             margin-left: 15%;
 
             .products {
-                width: 85%;
+                width: 80%;
             }
         
         } 
@@ -465,7 +461,6 @@ div{
     /* FAQ */
 
     .gridContainerFaq {
-        display: grid;
         grid-template-rows: auto auto 23.5rem;
         grid-template-columns: 100%;
         grid-template-areas: 
@@ -477,7 +472,6 @@ div{
     /* CONTACTO */
 
     .gridContainerContacto {
-        display: grid;
         grid-template-rows: auto auto 23.5rem;
         grid-template-columns: 100%;
         grid-template-areas: 
@@ -487,36 +481,19 @@ div{
     }
 
     .gridContacto {
-        display: grid;
         grid-template-rows: auto auto;
         grid-template-columns: auto;
         justify-content: stretch;
         align-items: center;
+        transform: translateY(3rem);
 
-        .formulario{ 
-            
-            h1{
-            transform: translateX(-4rem);
+        .mapa {
+            overflow: scroll;
+            width: 75%;
+            height: 75%;
             }
-
-            .mapa {
-                overflow: scroll;
-                width: 75%;
-                height: 75%;
-            }
-        }
     }
 
-    .mainContacto {
-        div{
-            section{
-                form{
-                    width: 20rem;
-                    transform: translateX(-4rem);
-                }
-            }
-        }
-    }
 }
 
 
