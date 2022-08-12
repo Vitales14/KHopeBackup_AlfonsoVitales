@@ -1,0 +1,150 @@
+/*------------------------------------------------------*/
+/*-----------------------CELULAR------------------------*/
+/*------------------------------------------------------*/
+@media screen and (min-width: 360px) and (max-width: 1024px) {
+
+    html, body {
+        overflow-x: hidden;
+    }
+    
+
+    .footer {
+        flex-flow: column nowrap;
+        justify-content:center;
+        align-items:center;
+        margin-bottom: 0;
+    }
+
+
+    /* INICIO */
+    .gridContainer {
+        grid-template-rows: auto auto auto 15rem auto;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "header"
+        "mainE"
+        "mainE1"
+        "carroussel"
+        "footer";
+    }
+
+    .main, .info , .real, 
+    .gridMetodo h3, .gridMetodo ol{
+        display: none;
+    }
+
+    .hola, .envios {
+        padding-left: 6rem;
+    }
+
+    .pics {
+        align-items: center;
+        justify-content: center;
+        width: 65%;
+        height: 60%;
+        margin: 1.5rem;
+    }
+
+    .photo {
+        height: 13rem;
+        width: 26rem;
+    }
+
+    /* MÉTODO DE COMPRA */
+    .gridContainerMdc {
+        grid-template-rows: auto auto 23.5rem;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "header"
+        "mainMdc" 
+        "footer";
+    }
+    
+    .gridMetodo {
+        font-size: small;
+        text-align: center;
+    }
+
+    .mainMdc{ 
+        .grid {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content:center;
+            
+            img {
+                margin-top: 2%;
+            }
+        }
+    }
+
+    /* SERVICIOS */
+
+    .gridContainerServicios {
+        grid-template-rows: auto 160rem auto;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "header"
+        "mainServicios" 
+        "footer";
+    }
+
+    .mainServicios{
+
+        .heading h1 {
+            margin-left: 15%;
+            margin-top: 4%;
+            margin-bottom: 4%;
+        }
+        
+        .galeria {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            gap: 5rem;
+            margin-left: 15%;
+
+            .products {
+                width: 80%;
+            }
+        
+        } 
+    }
+
+    /* FAQ */
+
+    .gridContainerFaq {
+        grid-template-rows: auto auto 23.5rem;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "header"
+        "mainFaq" 
+        "footer";
+    }
+
+    /* CONTACTO */
+
+    .gridContainerContacto {
+        grid-template-rows: auto auto 23.5rem;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "header"
+        "mainContacto" 
+        "footer";
+    }
+
+    .gridContacto {
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+        justify-content: stretch;
+        align-items: center;
+        transform: translateY(3rem);
+
+        .mapa {
+            overflow: scroll;
+            width: 75%;
+            height: 75%;
+            }
+    }
+
+}
+

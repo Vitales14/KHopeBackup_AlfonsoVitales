@@ -5,8 +5,9 @@
   font-family: "Montserrat", sans-serif;
 }
 
+/* VARIABLES */
 /*--------------------------------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------GRID CONTAINER---------------------------------------------------------*/
+/*--------------------------------------------------------- GRID -----------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 /* INICIO */
 .gridContainer {
@@ -92,16 +93,6 @@
   grid-template-areas: "header  header  header" "mainContacto  mainContacto  mainContacto" "footer  footer  footer";
   grid-template-rows: auto 35rem auto;
   grid-template-columns: auto auto auto;
-}
-
-/*--------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------HEADER-------------------------------------------------------------*/
-/*--------------------------------------------------------------------------------------------------------------------------------*/
-.navbar ul li a:hover {
-  background-color: #3396d3;
-  border-radius: 8px;
-  transition: background-color, box-shadow 0.5s;
-  box-shadow: 0px 1px 10px;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------*/
@@ -226,71 +217,6 @@
   transform: translateY(-5rem);
 }
 
-.formulario {
-  justify-self: self-start;
-  padding-left: 6rem;
-}
-
-/*--------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------FOOTER-------------------------------------------------------------*/
-/*--------------------------------------------------------------------------------------------------------------------------------*/
-.info {
-  width: 25rem;
-  padding-top: 2rem;
-  text-align: justify;
-  padding-top: 2rem;
-}
-.info h3 {
-  transform: translateX(4rem);
-}
-.info p {
-  font-size: 0.9375em;
-  font-weight: normal;
-  color: white;
-  line-height: 2;
-  list-style-type: none;
-  transform: translateX(-2rem);
-}
-
-.contacto {
-  width: 20rem;
-  padding-top: 2rem;
-  padding-top: 2rem;
-}
-.contacto h3 {
-  transform: translateX(4rem);
-}
-.contacto .listaContacto {
-  line-height: 2;
-  list-style-type: none;
-  transform: translateX(-2rem);
-}
-
-.redes {
-  padding-top: 2rem;
-}
-
-.red {
-  width: 7.3rem;
-  height: 5.3rem;
-  padding-right: 1.75rem;
-}
-.red:hover {
-  filter: invert(77%) sepia(55%) saturate(206%) hue-rotate(150deg) brightness(96%) contrast(88%);
-  transition: filter 0.4s;
-}
-
-div h3 {
-  font-size: 1.25em;
-  font-weight: bold;
-  color: white;
-}
-div ul li {
-  font-size: 0.9375em;
-  font-weight: normal;
-  color: white;
-}
-
 /*------------------------------------------------------*/
 /*-----------------------CELULAR------------------------*/
 /*------------------------------------------------------*/
@@ -391,4 +317,73 @@ div ul li {
     width: 75%;
     height: 75%;
   }
+}
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------HEADER-------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+.navbar ul li a:hover {
+  background-color: #3396d3;
+  border-radius: 8px;
+  transition: background-color, box-shadow 0.5s;
+  box-shadow: 0px 1px 10px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------FOOTER-------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+.info {
+  width: 25rem;
+  padding-top: 2rem;
+  text-align: justify;
+  padding-top: 2rem;
+}
+.info h3 {
+  transform: translateX(4rem);
+}
+.info p {
+  font-size: 0.9375em;
+  font-weight: normal;
+  color: white;
+  line-height: 2;
+  list-style-type: none;
+  transform: translateX(-2rem);
+}
+
+.contacto {
+  width: 20rem;
+  padding-top: 2rem;
+  padding-top: 2rem;
+}
+.contacto h3 {
+  transform: translateX(4rem);
+}
+.contacto .listaContacto {
+  line-height: 2;
+  list-style-type: none;
+  transform: translateX(-2rem);
+}
+
+.redes {
+  padding-top: 2rem;
+}
+
+.red {
+  width: 7.3rem;
+  height: 5.3rem;
+  padding-right: 1.75rem;
+}
+.red:hover {
+  filter: invert(77%) sepia(55%) saturate(206%) hue-rotate(150deg) brightness(96%) contrast(88%);
+  transition: filter 0.4s;
+}
+
+div h3 {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: white;
+}
+div ul li {
+  font-size: 0.9375em;
+  font-weight: normal;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
