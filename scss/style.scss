@@ -5,13 +5,20 @@
  }
 
  /* VARIABLES */
- $azulClaro:#99d4e7;
- $azulfuerte:#3396d3;
- $purpura:#5457a1;
+$sombra: 0px 1px 10px;
 
  @import "grid";
  @import "seccionMain";
  @import "mediaQ";
+
+ /* MAPS */
+ $redes: (whatsapp: invert(44%) sepia(30%) saturate(984%) hue-rotate(124deg) brightness(94%) contrast(98%),
+          facebook: invert(36%) sepia(71%) saturate(456%) hue-rotate(181deg) brightness(96%) contrast(97%),
+          instagram: invert(27%) sepia(91%) saturate(1327%) hue-rotate(295deg) brightness(89%) contrast(90%));
+
+$colores: (azulClaro: #99d4e7,
+           azulFuerte: #3396d3,
+           purpura: #5457a1);
 
 
 /*--------------------------------------------------------------------------------------------------------------------------------*/
@@ -23,10 +30,10 @@
         li{
             a{
             &:hover {
-                background-color: $azulfuerte;
+                background-color: map-get($colores, azulFuerte);
                 border-radius: 8px;
                 transition: background-color, box-shadow 0.5s;
-                box-shadow: 0px 1px 10px;
+                box-shadow: $sombra;
                 } 
             }
         }
@@ -76,16 +83,29 @@
 
 .redes {
     padding-top: 2rem; 
-}
 
-.red {
-    width: 7.3rem;
-    height: 5.3rem;
-    padding-right: 1.75rem;
-
-    &:hover{
-        filter: invert(77%) sepia(55%) saturate(206%) hue-rotate(150deg) brightness(96%) contrast(88%);
-        transition: filter 0.4s;
+    .red_fb {
+        width: 7.3rem;
+        height: 5.3rem;
+        padding-right: 1.75rem;
+    
+        &:hover{
+            filter: map-get($redes, facebook);
+        }
+    }
+    
+    .red_ig{
+        @extend .red_fb;
+        &:hover{
+            filter: map-get($redes, instagram);
+        }
+    }
+    
+    .red_ws{
+        @extend .red_fb;
+        &:hover{
+            filter: map-get($redes, whatsapp);
+        }
     }
 }
 

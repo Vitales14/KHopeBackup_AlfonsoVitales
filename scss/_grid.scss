@@ -16,7 +16,7 @@
 }
 
 .header {
-    background-color: $azulClaro;
+    background-color: map-get($colores, azulClaro);
     grid-area: header;
     display: flex;
     justify-content: space-evenly;
@@ -24,39 +24,31 @@
 }
 
 .main {
-    background-color: $azulClaro;
+    @extend .header;
     grid-area: main;
-    display: flex;
     justify-content: space-around;
-    align-items: center;
 }
 
 .mainE {
-    background-color: $azulClaro;
+    @extend .header;
     grid-area: mainE;
-    display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .mainE1 {
-    background-color: $azulClaro;
+    @extend .header;
     grid-area: mainE1;
-    display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .carroussel {
-    background-color: $azulClaro;
+    @extend .header;
     grid-area: carroussel;
-    display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .footer {
-    background-color: $purpura;
+    background-color: map-get($colores, purpura);
     grid-area: footer;
     display: flex;
     flex-flow: row nowrap;
@@ -97,11 +89,9 @@
 }    
 
 .gridContainerContacto {
-    display: grid;
+    @extend .gridContainerFaq;
     grid-template-areas: 
     "header  header  header"
     "mainContacto  mainContacto  mainContacto" 
     "footer  footer  footer";
-    grid-template-rows: auto 35rem auto;
-    grid-template-columns: auto auto auto;
 }

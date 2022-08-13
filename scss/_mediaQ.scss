@@ -124,8 +124,7 @@
     /* CONTACTO */
 
     .gridContainerContacto {
-        grid-template-rows: auto auto 23.5rem;
-        grid-template-columns: 100%;
+        @extend .gridContainerFaq;
         grid-template-areas: 
         "header"
         "mainContacto" 
