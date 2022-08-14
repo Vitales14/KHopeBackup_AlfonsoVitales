@@ -1,6 +1,20 @@
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------- GRID -----------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------*/
+                                                        /* MAPS */
+$colores:  (azulClaro: #99d4e7,
+            azulFuerte: #3396d3,
+            purpura: #5457a1);
+
+                                                        /* MIXIN */
+
+@mixin grid ($area, $align-items) {
+    background-color: map-get($colores, azulClaro);
+    grid-area: $area;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: $align-items;
+}
 
                                                         /* INICIO */
 .gridContainer {
@@ -16,35 +30,23 @@
 }
 
 .header {
-    background-color: map-get($colores, azulClaro);
-    grid-area: header;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    @include grid(header, center);
 }
 
 .main {
-    @extend .header;
-    grid-area: main;
-    justify-content: space-around;
+    @include grid(main, space-around);
 }
 
 .mainE {
-    @extend .header;
-    grid-area: mainE;
-    justify-content: center;
+    @include grid(mainE, center);
 }
 
 .mainE1 {
-    @extend .header;
-    grid-area: mainE1;
-    justify-content: center;
+    @include grid(mainE1, center);
 }
 
 .carroussel {
-    @extend .header;
-    grid-area: carroussel;
-    justify-content: center;
+    @include grid(carroussel, center);
 }
 
 .footer {

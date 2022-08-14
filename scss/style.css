@@ -9,6 +9,8 @@
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------- GRID -----------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------*/
+/* MAPS */
+/* MIXIN */
 /* INICIO */
 .gridContainer {
   display: grid;
@@ -17,7 +19,7 @@
   grid-template-rows: 4rem 15rem 10rem auto auto;
 }
 
-.header, .carroussel, .mainE1, .mainE, .main {
+.header {
   background-color: #99d4e7;
   grid-area: header;
   display: flex;
@@ -26,23 +28,35 @@
 }
 
 .main {
+  background-color: #99d4e7;
   grid-area: main;
-  justify-content: space-around;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: space-around;
 }
 
 .mainE {
+  background-color: #99d4e7;
   grid-area: mainE;
-  justify-content: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .mainE1 {
+  background-color: #99d4e7;
   grid-area: mainE1;
-  justify-content: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .carroussel {
+  background-color: #99d4e7;
   grid-area: carroussel;
-  justify-content: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .footer {
@@ -330,7 +344,6 @@
 
 .contacto {
   width: 20rem;
-  padding-top: 2rem;
   padding-top: 2rem;
 }
 .contacto h3 {
