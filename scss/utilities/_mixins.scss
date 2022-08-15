@@ -1,0 +1,9 @@
+/* MIXIN */
+
+@mixin grid ($area, $align-items) {
+background-color: map-get($colores, azulClaro);
+grid-area: $area;
+display: flex;
+justify-content: space-evenly;
+align-items: $align-items;
+}

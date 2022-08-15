@@ -1,21 +1,16 @@
-* {
-    margin: 0;
-    padding: 0; 
-    font-family: 'Montserrat', sans-serif;
- }
 
- /* VARIABLES */
-$sombra: 0px 1px 10px;
+/* UTILITIES */
+ @import "./utilities/maps";
+ @import "./utilities/mixins";
+ @import "./utilities/variables";
 
- @import "grid";
- @import "seccionMain";
- @import "mediaQ";
-
- /* MAPS */
-    $redes: (whatsapp: invert(44%) sepia(30%) saturate(984%) hue-rotate(124deg) brightness(94%) contrast(98%),
-          facebook: invert(36%) sepia(71%) saturate(456%) hue-rotate(181deg) brightness(96%) contrast(97%),
-          instagram: invert(27%) sepia(91%) saturate(1327%) hue-rotate(295deg) brightness(89%) contrast(90%));
-
+ /* BASE */
+ @import "./base/reset";
+ 
+ /* LAYOUT */
+ @import "./layouts/grid";
+ @import "./layouts/mediaQ";
+ @import "./layouts/seccionMain";
 
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------HEADER-------------------------------------------------------------*/
