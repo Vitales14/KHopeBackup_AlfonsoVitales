@@ -4,4 +4,3 @@ CAMBIOS HECHOS:
 *Cambié los títulos de todas las páginas por unos que creí más adecuados para su uso.
 *Cambié algunas etiquetas semánticas de "Heading" para respetar la estructura de los encabezados.
 *Comprimí la mayoría de imagenes, con excepción de las de la sección del Carrousel ubicada en el indes (ya que perdían calidad al hacerlo). 
-*Corregí una parte del MediaQuery en el que la página de sevicios se veía mal en la sección de "Productos". 
