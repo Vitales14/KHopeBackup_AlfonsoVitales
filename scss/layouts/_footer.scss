@@ -1,0 +1,78 @@
+.info {
+    width: 25rem;
+    padding-top: 2rem;
+    text-align: justify;
+    padding-top: 2rem;
+
+    h3{
+        transform: translateX(4rem);
+    }
+
+    p {
+        font-size: 0.9375em;
+        font-weight: normal;
+        color: white;
+        line-height: 2;
+        list-style-type: none;
+        transform: translateX(-2rem);
+    }
+}
+
+.contacto {
+    width: 20rem;
+    padding-top: 2rem;
+
+    h3 {
+        transform: translateX(4rem);
+    }
+
+    .listaContacto{
+        line-height: 2;
+        list-style-type: none;
+        transform: translateX(-2rem);
+    }
+}
+
+.redes {
+    padding-top: 2rem; 
+
+    .red_fb {
+        width: 7.3rem;
+        height: 5.3rem;
+        padding-right: 1.75rem;
+    
+        &:hover{
+            filter: map-get($redes, facebook);
+        }
+    }
+    
+    .red_ig{
+        @extend .red_fb;
+        &:hover{
+            filter: map-get($redes, instagram);
+        }
+    }
+    
+    .red_ws{
+        @extend .red_fb;
+        &:hover{
+            filter: map-get($redes, whatsapp);
+        }
+    }
+}
+
+div{
+    h3 {
+        font-size: 1.25em;
+        font-weight: bold;
+        color: white;
+    }
+    ul{
+        li{
+            font-size: 0.9375em;
+            font-weight: normal;
+            color: white;
+        }
+    }
+}
+

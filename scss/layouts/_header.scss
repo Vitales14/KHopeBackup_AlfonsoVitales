@@ -1,0 +1,14 @@
+.navbar{ 
+    ul{
+        li{
+            a{
+            &:hover {
+                background-color: map-get($colores, azulFuerte);
+                border-radius: 8px;
+                transition: background-color, box-shadow 0.5s;
+                box-shadow: $sombra;
+                } 
+            }
+        }
+    }
+}

@@ -1,16 +1,84 @@
 @charset "UTF-8";
+/* UTILITIES */
+/* VARIABLES */ /* MAPS */ /* MIXIN */
+/* BASE */
 * {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
 }
 
-/* VARIABLES */
+/* LAYOUT */
+.navbar ul li a:hover {
+  background-color: #3396d3;
+  border-radius: 8px;
+  transition: background-color, box-shadow 0.5s;
+  box-shadow: 0px 1px 10px;
+}
+
+.info {
+  width: 25rem;
+  padding-top: 2rem;
+  text-align: justify;
+  padding-top: 2rem;
+}
+.info h3 {
+  transform: translateX(4rem);
+}
+.info p {
+  font-size: 0.9375em;
+  font-weight: normal;
+  color: white;
+  line-height: 2;
+  list-style-type: none;
+  transform: translateX(-2rem);
+}
+
+.contacto {
+  width: 20rem;
+  padding-top: 2rem;
+}
+.contacto h3 {
+  transform: translateX(4rem);
+}
+.contacto .listaContacto {
+  line-height: 2;
+  list-style-type: none;
+  transform: translateX(-2rem);
+}
+
+.redes {
+  padding-top: 2rem;
+}
+.redes .red_fb, .redes .red_ws, .redes .red_ig {
+  width: 7.3rem;
+  height: 5.3rem;
+  padding-right: 1.75rem;
+}
+.redes .red_fb:hover, .redes .red_ws:hover, .redes .red_ig:hover {
+  filter: invert(36%) sepia(71%) saturate(456%) hue-rotate(181deg) brightness(96%) contrast(97%);
+}
+.redes .red_ig:hover {
+  filter: invert(27%) sepia(91%) saturate(1327%) hue-rotate(295deg) brightness(89%) contrast(90%);
+}
+.redes .red_ws:hover {
+  filter: invert(44%) sepia(30%) saturate(984%) hue-rotate(124deg) brightness(94%) contrast(98%);
+}
+
+div h3 {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: white;
+}
+div ul li {
+  font-size: 0.9375em;
+  font-weight: normal;
+  color: white;
+}
+
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------- GRID -----------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------*/
-/* MAPS */
-/* MIXIN */
 /* INICIO */
 .gridContainer {
   display: grid;
@@ -307,79 +375,5 @@
   .gridContacto .mapa {
     overflow: scroll;
     width: 75%;
-    height: 75%;
   }
-}
-/* MAPS */
-/*--------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------HEADER-------------------------------------------------------------*/
-/*--------------------------------------------------------------------------------------------------------------------------------*/
-.navbar ul li a:hover {
-  background-color: #3396d3;
-  border-radius: 8px;
-  transition: background-color, box-shadow 0.5s;
-  box-shadow: 0px 1px 10px;
-}
-
-/*--------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------FOOTER-------------------------------------------------------------*/
-/*--------------------------------------------------------------------------------------------------------------------------------*/
-.info {
-  width: 25rem;
-  padding-top: 2rem;
-  text-align: justify;
-  padding-top: 2rem;
-}
-.info h3 {
-  transform: translateX(4rem);
-}
-.info p {
-  font-size: 0.9375em;
-  font-weight: normal;
-  color: white;
-  line-height: 2;
-  list-style-type: none;
-  transform: translateX(-2rem);
-}
-
-.contacto {
-  width: 20rem;
-  padding-top: 2rem;
-}
-.contacto h3 {
-  transform: translateX(4rem);
-}
-.contacto .listaContacto {
-  line-height: 2;
-  list-style-type: none;
-  transform: translateX(-2rem);
-}
-
-.redes {
-  padding-top: 2rem;
-}
-.redes .red_fb, .redes .red_ws, .redes .red_ig {
-  width: 7.3rem;
-  height: 5.3rem;
-  padding-right: 1.75rem;
-}
-.redes .red_fb:hover, .redes .red_ws:hover, .redes .red_ig:hover {
-  filter: invert(36%) sepia(71%) saturate(456%) hue-rotate(181deg) brightness(96%) contrast(97%);
-}
-.redes .red_ig:hover {
-  filter: invert(27%) sepia(91%) saturate(1327%) hue-rotate(295deg) brightness(89%) contrast(90%);
-}
-.redes .red_ws:hover {
-  filter: invert(44%) sepia(30%) saturate(984%) hue-rotate(124deg) brightness(94%) contrast(98%);
-}
-
-div h3 {
-  font-size: 1.25em;
-  font-weight: bold;
-  color: white;
-}
-div ul li {
-  font-size: 0.9375em;
-  font-weight: normal;
-  color: white;
 }/*# sourceMappingURL=style.css.map */

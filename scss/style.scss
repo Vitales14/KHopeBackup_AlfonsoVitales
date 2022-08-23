@@ -1,118 +1,18 @@
 
 /* UTILITIES */
+ @import "./utilities/variables";
  @import "./utilities/maps";
  @import "./utilities/mixins";
- @import "./utilities/variables";
 
  /* BASE */
  @import "./base/reset";
  
  /* LAYOUT */
+ @import "./layouts/header";
+ @import "./layouts/footer";
  @import "./layouts/grid";
- @import "./layouts/mediaQ";
  @import "./layouts/seccionMain";
-
-/*--------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------HEADER-------------------------------------------------------------*/
-/*--------------------------------------------------------------------------------------------------------------------------------*/
-
-.navbar{ 
-    ul{
-        li{
-            a{
-            &:hover {
-                background-color: map-get($colores, azulFuerte);
-                border-radius: 8px;
-                transition: background-color, box-shadow 0.5s;
-                box-shadow: $sombra;
-                } 
-            }
-        }
-    }
-}
-
-/*--------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------FOOTER-------------------------------------------------------------*/
-/*--------------------------------------------------------------------------------------------------------------------------------*/
-
-
-.info {
-    width: 25rem;
-    padding-top: 2rem;
-    text-align: justify;
-    padding-top: 2rem;
-
-    h3{
-        transform: translateX(4rem);
-    }
-
-    p {
-        font-size: 0.9375em;
-        font-weight: normal;
-        color: white;
-        line-height: 2;
-        list-style-type: none;
-        transform: translateX(-2rem);
-    }
-}
-
-.contacto {
-    width: 20rem;
-    padding-top: 2rem;
-
-    h3 {
-        transform: translateX(4rem);
-    }
-
-    .listaContacto{
-        line-height: 2;
-        list-style-type: none;
-        transform: translateX(-2rem);
-    }
-}
-
-.redes {
-    padding-top: 2rem; 
-
-    .red_fb {
-        width: 7.3rem;
-        height: 5.3rem;
-        padding-right: 1.75rem;
-    
-        &:hover{
-            filter: map-get($redes, facebook);
-        }
-    }
-    
-    .red_ig{
-        @extend .red_fb;
-        &:hover{
-            filter: map-get($redes, instagram);
-        }
-    }
-    
-    .red_ws{
-        @extend .red_fb;
-        &:hover{
-            filter: map-get($redes, whatsapp);
-        }
-    }
-}
-
-div{
-    h3 {
-        font-size: 1.25em;
-        font-weight: bold;
-        color: white;
-    }
-    ul{
-        li{
-            font-size: 0.9375em;
-            font-weight: normal;
-            color: white;
-        }
-    }
-}
+ @import "./layouts/mediaQ";
 
 
 
