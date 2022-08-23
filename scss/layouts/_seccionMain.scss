@@ -81,22 +81,12 @@
         margin: 1%;
     }
 
-    .galeria {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: flex-start;
-        gap: 4rem;
-        margin: 1%;
-
-        .products {
-            width: 14.5%;
-
-            &:hover {
-                box-shadow: $sombra;
-                transition: box-shadow 0.5s;
-                transform: scale(1.5);
-                transition: transform 0.7s;
-            }
+    .products {
+        &:hover {
+            box-shadow: $sombra;
+            transition: box-shadow 0.5s;
+            transform: scale(1.075);
+            transition: transform 0.7s;
         }
     }
 }
