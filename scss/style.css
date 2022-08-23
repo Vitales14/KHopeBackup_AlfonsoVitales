@@ -145,21 +145,21 @@ div ul li {
 .gridContainerMdc {
   display: grid;
   grid-template-areas: "header  header  header" "mainMdc  mainMdc  mainMdc" "footer  footer  footer";
-  grid-template-rows: auto 29rem auto;
+  grid-template-rows: 4rem 29rem auto;
   grid-template-columns: auto auto auto;
 }
 
 .gridContainerServicios {
   display: grid;
   grid-template-areas: "header  header  header" "mainServicios  mainServicios  mainServicios" "footer  footer  footer";
-  grid-template-rows: auto 65.5rem auto;
+  grid-template-rows: 4rem 65.5rem auto;
   grid-template-columns: auto auto auto;
 }
 
 .gridContainerFaq, .gridContainerContacto {
   display: grid;
   grid-template-areas: "header  header  header" "mainFaq  mainFaq  mainFaq" "footer  footer  footer";
-  grid-template-rows: auto 35rem auto;
+  grid-template-rows: 4rem 35rem auto;
   grid-template-columns: auto auto auto;
 }
 
