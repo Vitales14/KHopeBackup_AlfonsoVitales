@@ -152,7 +152,7 @@ div ul li {
 .gridContainerServicios {
   display: grid;
   grid-template-areas: "header  header  header" "mainServicios  mainServicios  mainServicios" "footer  footer  footer";
-  grid-template-rows: 4rem 65.5rem auto;
+  grid-template-rows: 4rem 68.5rem auto;
   grid-template-columns: auto auto auto;
 }
 
@@ -330,7 +330,7 @@ div ul li {
   }
   /* SERVICIOS */
   .gridContainerServicios {
-    grid-template-rows: auto 160rem auto;
+    grid-template-rows: auto 250rem auto;
     grid-template-columns: 100%;
     grid-template-areas: "header" "mainServicios" "footer";
   }
@@ -359,5 +359,12 @@ div ul li {
   .gridContacto .mapa {
     overflow: scroll;
     width: 75%;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 950px) {
+  .gridContainerServicios {
+    grid-template-rows: auto 380rem auto;
+    grid-template-columns: 100%;
+    grid-template-areas: "header" "mainServicios" "footer";
   }
 }/*# sourceMappingURL=style.css.map */

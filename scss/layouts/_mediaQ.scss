@@ -80,7 +80,7 @@
     /* SERVICIOS */
 
     .gridContainerServicios {
-        grid-template-rows: auto 160rem auto;
+        grid-template-rows: auto 250rem auto;
         grid-template-columns: 100%;
         grid-template-areas: 
         "header"
@@ -129,5 +129,16 @@
             overflow: scroll;
             width: 75%;
         }
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 950px) {
+    .gridContainerServicios {
+        grid-template-rows: auto 380rem auto;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "header"
+        "mainServicios" 
+        "footer";
     }
 }
