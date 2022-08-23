@@ -229,7 +229,6 @@ div ul li {
 .mainServicios {
   grid-area: mainServicios;
   background-color: white;
-  height: 10rem;
   padding-left: 7rem;
   padding-right: 3.5rem;
 }
