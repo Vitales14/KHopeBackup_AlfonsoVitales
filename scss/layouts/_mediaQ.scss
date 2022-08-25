@@ -1,7 +1,7 @@
 /*------------------------------------------------------*/
 /*-----------------------CELULAR------------------------*/
 /*------------------------------------------------------*/
-@media screen and (min-width: 360px) and (max-width: 1024px) {
+@media screen and (max-width: 751px) {
 
     html, body {
         overflow-x: hidden;
@@ -12,9 +12,7 @@
         flex-flow: column nowrap;
         justify-content:center;
         align-items:center;
-        margin-bottom: 0;
     }
-
 
     /* INICIO */
     .gridContainer {
@@ -26,6 +24,7 @@
         "mainE1"
         "carroussel"
         "footer";
+        min-height: 100vh;
     }
 
     .main, .info , .real, 
@@ -58,6 +57,7 @@
         "header"
         "mainMdc" 
         "footer";
+        min-height: 100vh;
     }
     
     .gridMetodo {
@@ -69,9 +69,11 @@
         .grid {
             display: flex;
             flex-flow: row wrap;
-            justify-content:center;
+            justify-content: center;
             
-            img {
+            .imagen {
+                width: 55%;
+                padding-bottom: 1rem;
                 margin-top: 2%;
             }
         }
@@ -86,14 +88,16 @@
         "header"
         "mainServicios" 
         "footer";
+        min-height: 100vh;
     }
 
     .mainServicios{
-
+        padding-left: 3rem;
+        padding-right: 3rem;
         .heading h1 {
-            margin-left: 15%;
             margin-top: 4%;
             margin-bottom: 4%;
+            text-align: center;
         } 
     }
 
@@ -106,12 +110,14 @@
         "header"
         "mainFaq" 
         "footer";
+        min-height: 100vh;
     }
 
     /* CONTACTO */
 
     .gridContainerContacto {
-        @extend .gridContainerFaq;
+        grid-template-rows: auto auto 23.5rem;
+        grid-template-columns: 100%;
         grid-template-areas: 
         "header"
         "mainContacto" 
@@ -128,17 +134,232 @@
         .mapa {
             overflow: scroll;
             width: 75%;
+            transform: translateX(3.5rem);
         }
     }
 }
 
-@media screen and (min-width: 480px) and (max-width: 950px) {
+@media screen and (min-width: 752px) and (max-width: 970px)  {
+    .footer {
+        flex-flow: column nowrap;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .info{
+        width: 22rem;
+        padding: 2rem;
+
+        h3{
+            transform: translateX(-0.6rem);
+        }
+    }
+
+    /* INICIO */
+    .gridContainer {
+        grid-template-rows: auto 15rem 10rem 20rem 35.5rem;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "header"
+        "mainE"
+        "mainE1"
+        "carroussel"
+        "footer";
+        min-height: 100vh;
+    }
+
+    .main, .real, 
+    .gridMetodo h3, .gridMetodo ol{
+        display: none;
+    }
+
+    .hola, .envios {
+        padding-left: 6rem;
+        width: 85%;
+    }
+
+    .pics {
+        align-items: center;
+        justify-content: center;
+        width: 65%;
+        height: 60%;
+        margin: 1.5rem;
+    }
+
+    .photo {
+        height: 13rem;
+        width: 26rem;
+    }
+    
+    /* MÉTODO DE COMPRA */
+    .gridContainerMdc {
+        grid-template-rows: auto auto 35.5rem;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "header"
+        "mainMdc" 
+        "footer";
+        min-height: 100vh;
+    }
+    
+    .gridMetodo {
+        font-size: small;
+        text-align: center;
+    }
+
+    .mainMdc{ 
+        .grid {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            
+            .imagen {
+                width: 45%;
+                padding-bottom: 1rem;
+                margin-top: 2%;
+            }
+        }
+    }
+
+    /* SERVICIOS */
+
     .gridContainerServicios {
-        grid-template-rows: auto 380rem auto;
+        grid-template-rows: auto auto 35.5rem;
         grid-template-columns: 100%;
         grid-template-areas: 
         "header"
         "mainServicios" 
         "footer";
+        min-height: 100vh;
+    }
+
+    .mainServicios{
+        padding-left: 3rem;
+        padding-right: 3rem;
+        .heading h1 {
+            margin-top: 4%;
+            margin-bottom: 4%;
+            text-align: center;
+        } 
+    }
+
+    /* FAQ */
+
+    .gridContainerFaq {
+        grid-template-rows: auto 40rem 35.5rem;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "header"
+        "mainFaq" 
+        "footer";
+        min-height: 100vh;
+    }
+
+    /* CONTACTO */
+
+    .gridContainerContacto {
+        grid-template-rows: auto auto 35.5rem;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "header"
+        "mainContacto" 
+        "footer";
+    }
+
+    .gridContacto {
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+        justify-content: stretch;
+        align-items: center;
+        transform: translateY(3rem);
+
+        .mapa {
+            overflow: scroll;
+            width: 75%;
+            transform: translateX(4.75rem);
+        }
+    }
+
+    .mainContacto{
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 971px) and (max-width: 1450px){
+    
+    html, body {
+        overflow-x: hidden;
+    }
+    
+    .footer {
+        flex-flow: row nowrap;
+        justify-content:center;
+        align-items:center;
+        padding-left: 4rem;
+        margin-bottom: 0;
+    }
+    /* INICIO */
+    .gridContainer {
+        display: grid;
+        grid-template-areas: 
+        "header  header"
+        "main  mainE"
+        "main  mainE1"
+        "carroussel carroussel"  
+        "footer  footer";
+        grid-template-columns: 50vw auto;
+        grid-template-rows: 4rem auto auto auto 16rem;
+        min-height: 100vh;
+    }
+
+    .oso{
+        transform: translateX(-5rem);
+    }
+
+    /* MÉTODO DE COMPRA */
+    .gridContainerMdc {
+        grid-template-rows: auto auto 16rem;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "header"
+        "mainMdc" 
+        "footer";
+        min-height: 100vh;
+    }
+    
+    .gridMetodo {
+        font-size: small;
+        text-align: center;
+    }
+
+    .mainMdc{ 
+        .grid {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            
+            .imagen {
+                width: 45%;
+                padding-bottom: 1rem;
+                margin-top: 2%;
+            }
+        }
+    }
+
+    .gridContainerContacto {
+        display: grid;
+        grid-template-rows: 4rem auto 14rem;
+        grid-template-columns: auto;
+        grid-template-areas: 
+        "header"
+        "mainContacto" 
+        "footer";
+        min-height: 100vh;
+    }
+
+    .mapa {
+        overflow: scroll;
+        width: 75%;
+        transform: translateX(4.75rem);
     }
 }
