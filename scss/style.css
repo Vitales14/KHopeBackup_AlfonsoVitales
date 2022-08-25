@@ -81,6 +81,10 @@ div ul li {
   font-size: 1.25em;
 }
 
+footer {
+  padding-top: 1rem;
+}
+
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------- GRID -----------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------*/
@@ -89,7 +93,8 @@ div ul li {
   display: grid;
   grid-template-areas: "header  header  header" "main  mainE  mainE" "main  mainE1  mainE1" "carroussel carroussel carroussel" "footer  footer  footer";
   grid-template-columns: auto auto auto;
-  grid-template-rows: 4rem 15rem 10rem auto auto;
+  grid-template-rows: 4rem auto auto auto 14rem;
+  min-height: 100vh;
 }
 
 .header {
@@ -145,26 +150,30 @@ div ul li {
 .gridContainerMdc {
   display: grid;
   grid-template-areas: "header  header  header" "mainMdc  mainMdc  mainMdc" "footer  footer  footer";
-  grid-template-rows: 4rem 29rem auto;
+  grid-template-rows: 4rem auto 14rem;
   grid-template-columns: auto auto auto;
+  min-height: 100vh;
 }
 
 .gridContainerServicios {
   display: grid;
   grid-template-areas: "header  header  header" "mainServicios  mainServicios  mainServicios" "footer  footer  footer";
-  grid-template-rows: 4rem 68.5rem auto;
+  grid-template-rows: 4rem auto 14rem;
   grid-template-columns: auto auto auto;
+  min-height: 100vh;
 }
 
 .gridContainerFaq, .gridContainerContacto {
   display: grid;
   grid-template-areas: "header  header  header" "mainFaq  mainFaq  mainFaq" "footer  footer  footer";
-  grid-template-rows: 4rem 35rem auto;
+  grid-template-rows: 4rem auto 14rem;
   grid-template-columns: auto auto auto;
+  min-height: 100vh;
 }
 
 .gridContainerContacto {
   grid-template-areas: "header  header  header" "mainContacto  mainContacto  mainContacto" "footer  footer  footer";
+  min-height: 100vh;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------*/
@@ -288,7 +297,7 @@ div ul li {
   }
   /* INICIO */
   .gridContainer {
-    grid-template-rows: auto auto auto 15rem auto;
+    grid-template-rows: auto auto auto 15rem 23.5rem;
     grid-template-columns: 100%;
     grid-template-areas: "header" "mainE" "mainE1" "carroussel" "footer";
   }
@@ -330,7 +339,7 @@ div ul li {
   }
   /* SERVICIOS */
   .gridContainerServicios {
-    grid-template-rows: auto 250rem auto;
+    grid-template-rows: auto auto 23.5rem;
     grid-template-columns: 100%;
     grid-template-areas: "header" "mainServicios" "footer";
   }

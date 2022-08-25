@@ -18,7 +18,7 @@
 
     /* INICIO */
     .gridContainer {
-        grid-template-rows: auto auto auto 15rem auto;
+        grid-template-rows: auto auto auto 15rem 23.5rem;
         grid-template-columns: 100%;
         grid-template-areas: 
         "header"
@@ -80,7 +80,7 @@
     /* SERVICIOS */
 
     .gridContainerServicios {
-        grid-template-rows: auto 250rem auto;
+        grid-template-rows: auto auto 23.5rem;
         grid-template-columns: 100%;
         grid-template-areas: 
         "header"

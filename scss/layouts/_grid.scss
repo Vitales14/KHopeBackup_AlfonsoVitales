@@ -11,7 +11,8 @@
     "carroussel carroussel carroussel"  
     "footer  footer  footer";
     grid-template-columns: auto auto auto;
-    grid-template-rows: 4rem 15rem 10rem auto auto;
+    grid-template-rows: 4rem auto auto auto 14rem;
+    min-height: 100vh;
 }
 
 .header {
@@ -51,8 +52,9 @@
     "header  header  header"
     "mainMdc  mainMdc  mainMdc" 
     "footer  footer  footer";
-    grid-template-rows: 4rem 29rem auto;
+    grid-template-rows: 4rem auto 14rem;
     grid-template-columns: auto auto auto;
+    min-height: 100vh;
 }
 
 .gridContainerServicios {
@@ -61,8 +63,9 @@
     "header  header  header"
     "mainServicios  mainServicios  mainServicios" 
     "footer  footer  footer";
-    grid-template-rows: 4rem 68.5rem auto;
+    grid-template-rows: 4rem auto 14rem;
     grid-template-columns: auto auto auto;
+    min-height: 100vh;
 }    
 
 .gridContainerFaq {
@@ -71,8 +74,9 @@
     "header  header  header"
     "mainFaq  mainFaq  mainFaq" 
     "footer  footer  footer";
-    grid-template-rows: 4rem 35rem auto;
+    grid-template-rows: 4rem auto 14rem;
     grid-template-columns: auto auto auto;
+    min-height: 100vh;
 }    
 
 .gridContainerContacto {
@@ -81,4 +85,5 @@
     "header  header  header"
     "mainContacto  mainContacto  mainContacto" 
     "footer  footer  footer";
+    min-height: 100vh;
 }
