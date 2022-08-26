@@ -1,7 +1,7 @@
 /*------------------------------------------------------*/
 /*-----------------------CELULAR------------------------*/
 /*------------------------------------------------------*/
-@media screen and (min-width:401px) and (max-width: 751px) {
+@media screen and (max-width: 751px) {
 
     html, body {
         overflow-x: hidden;
@@ -13,6 +13,14 @@
         justify-content:center;
         align-items:center;
     }
+
+    .redes {
+        transform: translateX(1rem);
+    }
+
+    .contacto{
+        transform: translateX(1.5rem);
+    } 
 
     /* INICIO */
     .gridContainer {
