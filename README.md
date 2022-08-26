@@ -1,4 +1,2 @@
 # KhopeBackup_AlfonsoVitales
-Buenas, Vero. He creado este segundo repositorio por el problema que te comenté. Espero lo haya solucionado bien;
-ahora tengo un problema porque no me permite modificar las MediaQueries sin que se distorsione todo, te agradecería si hubiera algo que pudieras decirme al respecto. 
-Muchas gracias:)
+Finalmente, y después de mucho tiempo pude terminar esta página. Tuve pequeños conflictos por el lado de las media querys jajajaj, sobre todo al final. Pero creo pude resolverlo de la mejor manera. Además mi tutora se portó increíble conmigo, sin duda fue base para mi buen desempeño. Aunque sí hay algo que estoy seguro que no logré del todo bien, en la sección de Método de Compra, hay una pequeñísima parte en la que la página no quedó diseñada a como esperaba. Pero creo es el único error que no pude corregir; de ahí en más, nada. Después de este proyecto seguiré programando porque quiero convertirme en un gran desarrollador front end. Muchas gracias Gise por todo y que tengas bonita tarde
