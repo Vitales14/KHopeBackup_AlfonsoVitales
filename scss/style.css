@@ -285,7 +285,7 @@ footer {
 /*------------------------------------------------------*/
 /*-----------------------CELULAR------------------------*/
 /*------------------------------------------------------*/
-@media screen and (max-width: 751px) {
+@media screen and (min-width: 401px) and (max-width: 751px) {
   html, body {
     overflow-x: hidden;
   }
@@ -307,6 +307,7 @@ footer {
   }
   .hola, .envios {
     padding-left: 6rem;
+    width: 28rem;
   }
   .pics {
     align-items: center;
@@ -387,6 +388,7 @@ footer {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    padding-left: 1.5rem;
   }
   .info {
     width: 22rem;
@@ -408,7 +410,7 @@ footer {
   }
   .hola, .envios {
     padding-left: 6rem;
-    width: 85%;
+    width: 75%;
   }
   .pics {
     align-items: center;
